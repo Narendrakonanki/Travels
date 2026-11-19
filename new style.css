@@ -1,0 +1,194 @@
+body{
+    margin: 10px;
+    overflow-x:hidden;
+
+}
+.header{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px;
+    background-color: red;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.icon_area{
+    margin-left: 10px;
+
+}
+.icon_name{
+    font-weight: bolder;
+    font-size:28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: yellowgreen;
+}
+.menu_area ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+li{
+    padding: 5px;
+    border-radius: 2px;
+    transition: transform 0.5s, background-color 0.5s;
+}
+li:hover{
+    transform: scale(1.1);
+    background-color: aliceblue;
+    border-bottom: 2px solid aliceblue;
+    cursor: pointer;
+}
+.main_content{
+    background-image: url('ImAges/traveli.jpg');
+    margin-top:5px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+
+}
+.main_content h2{
+    position:absolute;
+    top: 30%;
+    left:45%;
+    transform:translate(-50%,-50%);
+    
+    color: blueviolet;
+    font-size:30px;
+    font-weight:bold;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),350px));
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    padding:20px;
+    
+}
+.services_heading{
+    text-align: center;
+}
+.card_img1,.card_img2,.card_img3{
+    width:100%;
+    max-width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align:center;
+    height: 250px;
+    object-fit: cover;
+    
+}
+.about_us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    width:100%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+    flex-wrap: wrap;
+    
+    
+}
+.side_img{
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+.side_img img{
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    margin:0;
+    object-fit: cover;
+    border-radius: 5px;
+
+    
+}
+.side_text{
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px;
+    margin: 0;
+}
+.side_text h1{
+    margin-bottom: 15px;
+}
+.side_text p{
+    margin:0;
+    font-size: 16px;
+    line-height:1.7;
+    text-align: justify;
+}
+
+.ima1,
+.ima2,
+.ima3{
+    width:100%;
+    max-width:350px;
+    height:350px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:transform 1s;
+    border-radius:5px;
+}
+
+.ima1:hover,
+.ima2:hover,
+.ima3:hover{
+    transform:scale(1.05);
+}
+
+.gallery_text{
+    text-align:center;
+    width:100%;
+    padding-top:20px;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:flex;
+    /* justify-content:flex-start; */
+    gap:20px;
+    flex-wrap:wrap;
+    padding-left: 10px;
+}
+.footer{
+    background:black;
+    color:white;
+    padding:20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:30px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+@media (max-width:430px) {
+    .header{
+    height: 90px;
+    display: grid;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px;
+    background-color: greenyellow;
+    width:100%;
+}
+
+
+    
+}
+
+
